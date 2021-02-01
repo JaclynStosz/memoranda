@@ -61,7 +61,7 @@ public class WorkPanel extends JPanel {
 				BorderFactory.createEmptyBorder(0, 2, 0, 0));
 
 		this.setLayout(borderLayout1);
-		toolBar.setOrientation(JToolBar.VERTICAL);
+		toolBar.setOrientation(JToolBar.HORIZONTAL);
 		toolBar.setBackground(Color.white);
 
 		toolBar.setBorderPainted(false);
