@@ -14,3 +14,14 @@ dependencies {
   compile 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+
+//new code
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'mainClassName'
+    }
+    baseName = 'jastosz_memoranda.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
