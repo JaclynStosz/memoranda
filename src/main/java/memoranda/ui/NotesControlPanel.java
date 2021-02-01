@@ -65,7 +65,7 @@ public class NotesControlPanel extends JPanel {
     }
 
     void jbInit() throws Exception {
-        tabbedPane.setFont(new java.awt.Font("Dialog", 1, 10));
+        tabbedPane.setFont(new java.awt.Font("Dialog", 1, 60));
         tabbedPane.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(ChangeEvent e) {
                 tabbedPane_stateChanged(e);
